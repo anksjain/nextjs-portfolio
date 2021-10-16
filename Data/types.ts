@@ -8,10 +8,9 @@ export interface IProject{
     description:string
     imageUrl:string
     github_url:string
-    category:Category[]
+    app_url?:string
     tag:string[]
 }
-export type Category="react" | "node" |"mongo" | "express"
 
 export interface ITimeLineData{
     date:string,

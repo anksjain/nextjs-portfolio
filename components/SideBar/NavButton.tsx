@@ -16,6 +16,8 @@ function NavButton({ title,route }: INavButton) {
         dark:hover:border-blue-200  border-transparent border-2 hover:border-current
         "
         onClick={() => {
+          const sideBar = document.querySelector(".sideBar");
+          sideBar?.classList.toggle("-translate-x-full");
           router.push(route);
         }}
       >

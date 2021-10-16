@@ -103,6 +103,6 @@ function t() {
   Typer.addText({ keyCode: 123748 });
   if (Typer.index > Typer.text.length) {
     clearInterval(timer);
-      window.location.replace("/");
+      window.location.replace("/about");
   }
 }

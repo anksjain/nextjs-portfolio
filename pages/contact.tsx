@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ContactItem from "../components/Contact/ContactItem";
 import Title from "../components/Title/Title";
 import { ImLocation2 } from "react-icons/im";
@@ -15,6 +15,9 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+ }, []);
   const [level, setlevel] = useState<AlertColor>("info")
   const [msg, setmsg] = useState<string>("")
   const [openSnack, setopenSnack] = useState(false)

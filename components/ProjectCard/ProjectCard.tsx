@@ -6,8 +6,6 @@ import Details from "./Details";
 import { motion } from "framer-motion";
 import { stagger } from "../Animation/animation";
 import Modal from 'react-modal'
-// import Modal from "@mui/material/Modal";
-// import Button from "@mui/material/Button";
 interface IProjectCard {
   project: IProject;
 }
@@ -57,15 +55,15 @@ function ProjectCard({ project }: IProjectCard) {
           {project.name}
         </p>
       </div>
-        {/* {showDetail && <Details onClose={closeDetails} project={project} />} */}
-        <Modal
+        {showDetail && <Details onClose={closeDetails} project={project} />}
+        {/* <Modal
         isOpen={showDetail}
         onRequestClose={()=>setshowDetail(false)}
         contentLabel="Example Modal"
         style={customStyles}
       >
           <Details onClose={closeDetails} project={project} />
-        </Modal>
+        </Modal> */}
     </div>
   );
 }

@@ -9,10 +9,10 @@ interface ICmd{
 function Cmd({fun}:ICmd) {
   const router=useRouter()
   useEffect(() => {
-    router.prefetch("/")
+    router.prefetch("/about")
     const val = sessionStorage.getItem("intro");
     if (val) {
-      window.location.replace("/");
+      window.location.replace("/about");
     }
     sessionStorage.setItem("intro", "Already");
     // fun()

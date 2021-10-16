@@ -34,8 +34,13 @@ function Details({ project, onClose }: IDetails) {
        >
         <h2 className=" text-4xl font-bold">{project.name}</h2>
         <div className=" my-2 md:my-4 text-4xl flex justify-items-start  items-center">
-          <VscGithub href={project.github_url} className=" mr-4" />
-          <AiOutlineLink />
+          <a href={project.github_url}>
+          <VscGithub  className=" mr-4" />
+            </a>
+          {project.app_url &&  (<a href={project.app_url}>
+            <AiOutlineLink  />
+            </a>)}
+         
         </div>
         <h3 className=" font-normal text-lg">
          {project.description}

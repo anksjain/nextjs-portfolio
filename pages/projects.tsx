@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import { Projects } from "../Data/projects";
 import Title from "../components/Title/Title";
@@ -12,6 +12,9 @@ import {
   stagger,
 } from "../components/Animation/animation";
 function Project() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+ }, []);
   let filteredProjects: IProject[];
   const [activeFilter, setActiveFilter] = useState("All");
   const [myProjects, setmyProjects] = useState<IProject[]>(Projects);

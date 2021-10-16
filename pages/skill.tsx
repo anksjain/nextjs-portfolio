@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { routeAnimation } from "../components/Animation/animation";
 import TimeLine from "../components/Resume/TimeLine";
 import Skills from "../components/SkillsBar/Skills";
@@ -8,6 +8,9 @@ import Services from "../components/Services/Services";
 import Certificate from "../components/Services/Certificate";
 import Head from 'next/head'
 export default function Skill() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+ }, []);
   return (
     <motion.div
     variants={routeAnimation}

@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 import Cmd from "../components/Intro/cmd";
 import { useEffect, useState } from "react";
+let Intro:boolean
 function MyApp({ Component, pageProps, router }: AppProps) {
 
   // const [intro, setintro] = useState<boolean>(true)
@@ -12,15 +13,30 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   //   setintro(false)
   // }
   // useEffect(() => {
-  //   const val= window.sessionStorage.getItem("intro");
-  //   console.log(val,"val")
-  //   if(val){
+  //   const v1=sessionStorage.getItem("intro")
+  //   console.log("1",v1)
+  //   if (intro && v1)
+  //   {
+  //     console.log("in for")
   //     setintro(false)
+  //   }
+  //   return ()=>{
+  //     const v2=sessionStorage.getItem("intro")
+  //     console.log("2",v2)
+  //     if (intro && v2)
+  //     {
+  //       console.log("inn for")
+  //       setintro(false)
+  //     }
   //   }
   // }, []);
   // console.log(intro,"1")
-  if (router.pathname==="/intro") {
-    return <Cmd/>;
+  // // if (window){
+  // //   console.log(window.sessionStorage.getItem("intro"))
+  // // }
+  console.log(router.pathname,router.asPath)
+  if (router.pathname==="/") {
+    return <Cmd />;
   }
   return (
     <ThemeProvider attribute="class" defaultTheme="dark">
@@ -33,25 +49,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
   );
 }
 
-// MyApp.getInitialProps = async (appContext: AppContext) => {
-//   const appProps = await App.getInitialProps(appContext)
-
-//   // Webpack will not include this in client bundle
-//   if (typeof window === 'undefined') {
-//     // Hacky check from mister @denu5
-//     // Ensures that the expression under this condition will be executed
-//     // only once on first page render.
-//     // If the url starts with /_next/data, that means that we have
-//     // a client-side navigation situation requiring some additional data
-//     // from getServerSideProps or getInitialProps (not sure about this one).
-//     if (!appContext.ctx.req?.url?.startsWith('/_next/data')) {
-//       // Calculate something on server side
-//       appProps.pageProps.isLaptop = isLaptop(appContext.ctx.req)
-//       appProps.pageProps.ab = abMiddleware(appContext.ctx)
-//     }
-//   }
-
-//   return { ...appProps }
-// }
+MyApp.getInitialProps = async () => {
+ 
+  Intro=false
+  return { }
+}
 
 export default MyApp;
