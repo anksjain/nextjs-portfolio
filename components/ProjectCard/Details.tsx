@@ -15,7 +15,7 @@ function Details({ project, onClose }: IDetails) {
     variants={fadeInDown}
     initial="initial"
     animate="animate"
-      className="grid lg:grid-cols-2 gap-12 absolute right-0 left-0 z-40 px-6 md:px-16 py-10
+      className="grid lg:grid-cols-2 gap-12 absolute right-0 left-0 z-10 px-6 md:px-16 py-10
        dark:bg-dark-detail_background_1 bg-light-border"
     >
       <motion.div

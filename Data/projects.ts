@@ -13,7 +13,7 @@ export const Projects:IProject[]=[
         description:`Web App where job seeker or Recruiter can login or sign up to a portal.Job seekers can apply for multiple jobs and recruiters can view those applications and post multiple jobs.Admin can login and see jobs posted by recruiters and list of candidate applied to particular job with CRUD functionality.Developed using React For frontend & Golang for backend.`,
         imageUrl:"/projects/naukri.png",
         github_url:"https://github.com/anksjain/NaukriPortal_Backend_Golang",
-        app_url:" ",
+        app_url:"https://naukriportal.anksjain.com/",
         tag:["GO","Backend","Rest","MySql","React"]
     },{
         name:"Pension Management",
