@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ImageSection from "../components/ImageSection/ImageSection";
 import SideAbout from "../components/SideAbout/SideAbout";
 import Title from "../components/Title/Title";
 import { motion } from "framer-motion";
@@ -26,8 +25,8 @@ function About() {
         <SideAbout />
       </div>
       <Title title="TimeLine" />
-      <TimeLine icon={<MdWork />} title="Work Experience" data={Education} />
-      <TimeLine icon={<IoSchoolSharp />} title="Education" data={Work} />
+      <TimeLine icon={<MdWork />} title="Education" data={Education} />
+      <TimeLine icon={<IoSchoolSharp />} title="Work Experience" data={Work} />
     </motion.div>
   );
 }
