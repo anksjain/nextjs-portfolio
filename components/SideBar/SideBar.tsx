@@ -35,7 +35,7 @@ function SideBar() {
               </div>
             </div>
           <NavButtons />
-          <a href="/ANKIT-JAIN.pdf" download="ANKIT-JAIN.pdf  "> 
+          <a href="/ANKIT-JAIN1.pdf" download="ANKIT-JAIN.pdf  "> 
           <SideButton  title="Download CV" OnClick={() => {}} />
         </a>
         </div>

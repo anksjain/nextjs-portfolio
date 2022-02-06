@@ -98,7 +98,7 @@ function replaceUrls(text) {
 Typer.speed = 1.5;
 Typer.file = './helloanks.html';
 Typer.init();
-var timer = setInterval('t();',35);
+var timer = setInterval('t();',7);
 function t() {
   Typer.addText({ keyCode: 123748 });
   if (Typer.index > Typer.text.length) {
