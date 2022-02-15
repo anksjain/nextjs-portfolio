@@ -23,6 +23,7 @@ function Cmd({fun}:ICmd) {
   return (
     <div>
         <Head>
+        <title>Ankit Jain - Portfolio</title>
           <script
             type="text/javascript"
             src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"

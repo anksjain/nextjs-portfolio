@@ -5,7 +5,35 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang='en'>
-        <Head />
+        {/* <Head /> */}
+        <Head>
+          <title>Ankit Jain - Portfolio</title>
+          <meta name="description" content="A Backend developer from Gurugram,helping businesses to grow and solving problems by providing a efficient & scalable backend service" />
+          <meta property='og:url' content='/cover.png' />
+          <meta property='og:type' content='website' />
+          <meta property='og:title' content='Ankit Jain - Portfolio' />
+          <meta
+            property='og:description'
+            content='A Backend developer from Gurugram,helping businesses to grow and solving problems by providing a efficient & scalable backend service'
+          />
+          <meta property='og:image' content='/cover.png' />
+          <meta property='og:image:alt' content='Ankit Jain Portfolio' />
+          {/* Twitter OG Section */}
+          <meta name='twitter:title' content='Ankit Jain - Portfolio' />
+          <meta
+            name='twitter:description'
+            content='A Backend developer from Gurugram,helping businesses to grow and solving problems by providing a efficient & scalable backend service'
+          />
+          <meta name='twitter:image' content='/cover.png' />
+          <meta name='twitter:card' content='summary_large_image' />
+
+
+          <link rel='apple-touch-icon' sizes='180x180' href='/favicon.ico' />
+
+          <link rel='icon' type='image/png' sizes='32x32' href='/favicon.ico' />
+
+          <link rel='icon' type='image/png' sizes='16x16' href='/favicon.ico' />
+        </Head>
         <body id="console">
           <Main />
           <NextScript />
@@ -13,7 +41,7 @@ class MyDocument extends Document {
       </Html>
     )
   }
-} 
+}
 
 export default MyDocument
 
