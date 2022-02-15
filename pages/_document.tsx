@@ -9,14 +9,14 @@ class MyDocument extends Document {
         <Head>
           <title>Ankit Jain - Portfolio</title>
           <meta name="description" content="A Backend developer from Gurugram,helping businesses to grow and solving problems by providing a efficient & scalable backend service" />
-          <meta property='og:url' content='/cover.png' />
+          <meta property='og:url' content='https://anksjain.com/cover.png' />
           <meta property='og:type' content='website' />
           <meta property='og:title' content='Ankit Jain - Portfolio' />
           <meta
             property='og:description'
             content='A Backend developer from Gurugram,helping businesses to grow and solving problems by providing a efficient & scalable backend service'
           />
-          <meta property='og:image' content='/cover.png' />
+          <meta property='og:image' content='https://anksjain.com/cover.png' />
           <meta property='og:image:alt' content='Ankit Jain Portfolio' />
           {/* Twitter OG Section */}
           <meta name='twitter:title' content='Ankit Jain - Portfolio' />
@@ -24,7 +24,7 @@ class MyDocument extends Document {
             name='twitter:description'
             content='A Backend developer from Gurugram,helping businesses to grow and solving problems by providing a efficient & scalable backend service'
           />
-          <meta name='twitter:image' content='/cover.png' />
+          <meta name='twitter:image' content='https://anksjain.com/cover.png' />
           <meta name='twitter:card' content='summary_large_image' />
 
 
